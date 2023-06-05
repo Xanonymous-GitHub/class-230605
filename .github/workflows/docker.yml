@@ -2,14 +2,14 @@ name: cd
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   docker-image:
     env:
-      IMAGE: xanonymous/hey-ptt
+      IMAGE: xanonymous/class-230605
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
